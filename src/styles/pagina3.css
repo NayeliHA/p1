@@ -1,0 +1,201 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #ffe4f2, #f3e8ff, #e9d5ff);
+  color: #4b0040;
+  text-align: center;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header con fondo suave */
+header {
+  background: linear-gradient(90deg, #ffb6d9, #ff8ac3, #ff69b4);
+  padding: 25px 0;
+  margin-bottom: 40px;
+  border-radius: 0 0 25px 25px;
+  box-shadow: 0 4px 15px rgba(255, 0, 127, 0.2);
+  animation: fadeInDown 1.2s ease;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+  color: white;
+}
+
+/* Efecto de título animado */
+.titulo-animado {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #fff; /* texto sólido para legibilidad */
+  text-shadow: 
+    0 0 5px #ff69b4,
+    0 0 10px #ff8ac3,
+    0 0 15px #ffb6d9;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 
+      0 0 5px #ff69b4,
+      0 0 10px #ff8ac3,
+      0 0 15px #ffb6d9;
+  }
+  to {
+    text-shadow: 
+      0 0 10px #ff007f,
+      0 0 20px #ff69b4,
+      0 0 30px #ffb6d9;
+  }
+}
+
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffd1eb;
+  transform: scale(1.1);
+}
+
+/* Secciones como tarjetas */
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+section {
+  margin: auto;
+  width: 80%;
+  max-width: 700px;
+  background: white;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  animation: fadeIn 1.2s ease;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.8em;
+  margin-bottom: 12px;
+  color: #c71585;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+section p, li {
+  font-size: 1.1em;
+  color: #5c004f;
+}
+
+/* Botón */
+button {
+  padding: 12px 22px;
+  background: #ff69b4;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+button:hover {
+  background: #ff007f;
+  transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  padding: 15px 0;
+  background: #ffb6d9;
+  border-radius: 25px 25px 0 0;
+  color: #5c004f;
+  font-weight: bold;
+}
+
+/* Animaciones */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Estilo general de secciones */
+section {
+  margin: auto;
+  width: 80%;
+  max-width: 700px;
+  background: white;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  animation: fadeIn 1.2s ease;
+  text-align: center;
+}
+
+/* Nombre */
+#nombre h2 {
+  color: #e91e63;
+  text-shadow: 0 0 8px rgba(233, 30, 99, 0.3);
+}
+
+/* Sobre mí */
+#sobremi h2 {
+  color: #9c27b0;
+  text-shadow: 0 0 8px rgba(156, 39, 176, 0.3);
+}
+
+/* Proyectos */
+#proyectos h2 {
+  color: #3f51b5;
+  text-shadow: 0 0 8px rgba(63, 81, 181, 0.3);
+}
+
+/* Contacto */
+#contacto h2 {
+  color: #009688;
+  text-shadow: 0 0 8px rgba(0, 150, 136, 0.3);
+}
+
+/* Animación de secciones al pasar el cursor */
+.hover-animado {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 105, 180, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
