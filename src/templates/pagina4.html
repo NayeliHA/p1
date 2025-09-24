@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sanrio World</title>
+  <!-- ruta relativa desde templates hacia styles -->
+  <link rel="stylesheet" href="../styles/pagina4.css" />
+</head>
+<body>
+    <header class="site-header">
+    <nav class="top-nav">
+        <a href="index.html">Inicio</a>
+        <a href="pagina1.html">Página 1</a>
+        <a href="pagina2.html">Página 2</a>
+        <a href="pagina3.html">Página 3</a>
+        <a href="pagina4.html">Sanrio</a>
+    </nav>
+    </header>
+
+    <main>
+  <!-- HERO con carrusel -->
+  <section class="hero">
+    <div class="carousel-frame">
+      <div class="carousel-inner">
+        <div class="carousel-track" id="carouselTrack">
+          <div class="slide"><img src="../assets/img/sanrio1.jpg" alt="Hello Kitty"></div>
+          <div class="slide"><img src="../assets/img/sanrio2.jpg" alt="Cinnamoroll"></div>
+          <div class="slide"><img src="../assets/img/sanrio3.jpg" alt="Kuromi"></div>
+          <div class="slide"><img src="../assets/img/sanrio4.jpg" alt="My Melody"></div>
+        </div>
+        <h2 class="hero-title">🌸 Bienvenido al Mundo Sanrio</h2>
+        <button class="nav-btn prev" id="btnPrev">‹</button>
+        <button class="nav-btn next" id="btnNext">›</button>
+      </div>
+    </div>
+    <div class="thumbs" id="thumbs">
+      <button class="thumb" data-index="0"><img src="../assets/img/sanrio1.jpg"><span>Foto grupal</span></button>
+      <button class="thumb" data-index="1"><img src="../assets/img/sanrio2.jpg"><span>Foto grupal</span></button>
+      <button class="thumb" data-index="2"><img src="../assets/img/sanrio3.jpg"><span>Foto grupal</span></button>
+      <button class="thumb" data-index="3"><img src="../assets/img/sanrio4.jpg"><span>Foto grupal</span></button>
+    </div>
+  </section>
+
+  <!-- GALERÍA DE PERSONAJES -->
+  <section class="gallery">
+    <h3 class="gallery-title">Personajes Favoritos</h3>
+    <div class="characters">
+      <div class="character"><img src="../assets/img/hellokitty.jpg" alt="Hello Kitty"><h4>Hello Kitty</h4></div>
+      <div class="character"><img src="../assets/img/chococat.jpg" alt="Chococat"><h4>Chococat</h4></div>
+      <div class="character"><img src="../assets/img/chilemorrol.jpg" alt="Cinnamoroll"><h4>Cinnamoroll</h4></div>
+      <div class="character"><img src="../assets/img/pompompurrin.jpg" alt="Pompompurin"><h4>Pompompurin</h4></div>
+      <div class="character"><img src="../assets/img/kuromii.jpg" alt="Kuromi"><h4>Kuromi</h4></div>
+      <div class="character"><img src="../assets/img/pochacco.jpg" alt="Pochacco"><h4>Pochacco</h4></div>
+      <div class="character"><img src="../assets/img/mymelody.jpg" alt="My Melody"><h4>My Melody</h4></div>
+      <div class="character"><img src="../assets/img/maru.jpg" alt="Badtz-Maru"><h4>Badtz-Maru</h4></div>
+      <div class="character"><img src="../assets/img/keroppi.jpg" alt="Keroppi"><h4>Keroppi</h4></div>
+    </div>
+  </section>
+</main>
+  <!-- HISTORIA -->
+  <section class="history">
+    <h3>Historia de Sanrio</h3>
+    <p>Sanrio nació en Japón en 1960 gracias a Shintaro Tsuji, con la misión de compartir felicidad a través de pequeños regalos. 
+       Su lema es <b>“Small Gift, Big Smile”</b>. Hoy en día sus personajes son conocidos en todo el mundo.</p>
+    <img src="../assets/img/logo.jpg" alt="Sanrio Logo">
+  </section>
+
+  <!-- PRODUCTOS -->
+  <section class="products">
+    <h3>Productos Kawaii</h3>
+    <div class="grid">
+      <div class="item"><img src="../assets/img/peluches.jpg"><p>Peluches</p></div>
+      <div class="item"><img src="../assets/img/producto2.jpg"><p>Accesorios</p></div>
+      <div class="item"><img src="../assets/img/product3.jpg"><p>Libretas</p></div>
+      <div class="item"><img src="../assets/img/product4.jpg"><p>Tazas</p></div>
+    </div>
+  </section>
+  <!-- CONTACTO -->
+    <section class="contact">
+    <h3>Únete al Fanclub</h3>
+    <form>
+        <input type="text" placeholder="Tu nombre" required>
+        <input type="email" placeholder="Tu correo" required>
+        <button type="submit">Enviar</button>
+    </form>
+    </section>
+
+</main>
+
+
+    <!-- FOOTER MEJORADO -->
+    <footer class="site-footer">
+    <p>🌸 Fanpage Sanrio — Hecho con amor 💖</p>
+    <p>© 2025 — Inspirado en el mundo kawaii</p>
+    </footer>
+
+
+  <!-- script (defer para que el HTML cargue antes) -->
+  <script src="../scripts/pagina4.js" defer></script>
+</body>
+</html>
