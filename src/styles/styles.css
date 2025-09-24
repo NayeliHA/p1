@@ -43,3 +43,52 @@ h1 {
   transform: scale(1.05);
 }
 
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Cabecera */
+.site-header {
+  background: linear-gradient(90deg, #ff69b4, #d8b4fe, #ff9de2);
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Barra de navegación */
+.top-nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Links como botones */
+.top-nav a {
+  text-decoration: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+/* Hover y efecto activo */
+.top-nav a:hover {
+  background: #fff;
+  color: #ff69b4;
+  border-color: #ff69b4;
+  transform: scale(1.05);
+}
+
+.top-nav a.active {
+  background: #fff;
+  color: #ff69b4;
+  border-color: #ff69b4;
+}
