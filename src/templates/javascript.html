@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Universidad Nacional de Cañete</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+    /* Animación suave personalizada */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .fade-in {
+      animation: fadeIn 1s ease-in-out forwards;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-900">
+
+  <!-- NAVBAR -->
+  <header class="fixed w-full z-50 bg-gray-900 text-white shadow-lg">
+    <nav class="max-w-7xl mx-auto flex items-center justify-between p-4 lg:px-8">
+      <!-- LOGO -->
+      <div class="flex items-center gap-3">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/UNDC_logo.jpg/250px-UNDC_logo.jpg" alt="Logo UNDC" class="h-12 w-auto">
+        <span class="font-bold text-lg">UNDC</span>
+      </div>
+      <!-- LINKS -->
+      <div class="hidden lg:flex gap-x-8">
+        <a href="#inicio" class="hover:text-yellow-300">Inicio</a>
+        <a href="#nosotros" class="hover:text-yellow-300">Nosotros</a>
+        <a href="#carreras" class="hover:text-yellow-300">Carreras</a>
+        <a href="#docentes" class="hover:text-yellow-300">Docentes</a>
+        <a href="#noticias" class="hover:text-yellow-300">Noticias</a>
+        <a href="#contacto" class="hover:text-yellow-300">Contacto</a>
+      </div>
+      <!-- MENU MÓVIL -->
+      <button id="openMenu" class="lg:hidden">
+        <svg class="h-8 w-8" fill="none" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-16 6h16"/>
+        </svg>
+      </button>
+    </nav>
+    <!-- MENU DROPDOWN -->
+    <div id="mobileMenu" class="hidden bg-gray-900 text-white px-6 py-4 space-y-3 lg:hidden">
+      <a href="#inicio" class="block">Inicio</a>
+      <a href="#nosotros" class="block">Nosotros</a>
+      <a href="#carreras" class="block">Carreras</a>
+      <a href="#docentes" class="block">Docentes</a>
+      <a href="#noticias" class="block">Noticias</a>
+      <a href="#contacto" class="block">Contacto</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+    <section id="inicio" class="relative h-screen flex items-center justify-center text-center px-6 bg-gray-900">
+    <!-- Imagen de fondo -->
+    <div class="absolute inset-0">
+        <img src="https://mentor.pe/wp-content/uploads/2023/11/frontis-UNDC.jpg" 
+            alt="Campus UNDC" 
+            class="w-full h-full object-cover">
+        <!-- Capa verde con transparencia -->
+        <div class="absolute inset-0 bg-green-900 bg-opacity-70"></div>
+    </div>
+
+    <!-- Contenido -->
+    <div class="relative z-10 text-white max-w-3xl mx-auto">
+        <h1 class="text-4xl sm:text-6xl font-bold">Universidad Nacional de Cañete</h1>
+        <p class="mt-4 text-lg">“Formando profesionales con valores, ciencia y compromiso con el desarrollo de la región y el país.”</p>
+        <div class="mt-6 flex gap-4 justify-center">
+        <a href="#carreras" class="bg-gray-900 text-white font-semibold px-6 py-3 rounded-lg hover:bg-gray-600 transition">Nuestras Carreras</a>
+        <a href="#nosotros" class="border border-white px-6 py-3 rounded-lg hover:bg-white hover:text-gray-900 transition">Conócenos</a>
+        </div>
+    </div>
+    </section>
+
+  
+  <!-- SOBRE NOSOTROS -->
+  <section id="nosotros" class="py-20 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold text-gray-900">Sobre Nosotros</h2>
+      <p class="mt-4 text-lg text-gray-700">La Universidad Nacional de Cañete es una institución pública comprometida con la excelencia académica, la investigación científica y la responsabilidad social universitaria.</p>
+    </div>
+  </section>
+
+
+  <section class="bg-gray-900 text-white py-16">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-3 text-center gap-8">
+        <div>
+        <p class="text-4xl font-bold">+3000</p>
+        <p class="mt-2">Estudiantes</p>
+        </div>
+        <div>
+        <p class="text-4xl font-bold">10</p>
+        <p class="mt-2">Carreras</p>
+        </div>
+        <div>
+        <p class="text-4xl font-bold">25</p>
+        <p class="mt-2">Convenios Internacionales</p>
+        </div>
+    </div>
+   </section>
+
+    <section class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center text-gray-900">Testimonios</h2>
+        <div class="mt-12 grid gap-8 md:grid-cols-3">
+        <div class="bg-white p-6 rounded-xl shadow hover:shadow-xl transition">
+            <p class="italic text-gray-700">“La UNDC me brindó las herramientas necesarias para desarrollarme como profesional en sistemas.”</p>
+            <h3 class="mt-4 font-semibold text-green-800">María Torres</h3>
+            <p class="text-sm text-gray-500">Egresada de Ing. de Sistemas</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow hover:shadow-xl transition">
+            <p class="italic text-gray-700">“El enfoque en sostenibilidad de la carrera de Agronomía me abrió puertas en proyectos internacionales.”</p>
+            <h3 class="mt-4 font-semibold text-green-800">Juan Pérez</h3>
+            <p class="text-sm text-gray-500">Egresado de Agronomía</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow hover:shadow-xl transition">
+            <p class="italic text-gray-700">“La universidad me ayudó a crecer personal y profesionalmente, con una formación integral.”</p>
+            <h3 class="mt-4 font-semibold text-green-800">Ana Ramírez</h3>
+            <p class="text-sm text-gray-500">Egresada de Administración</p>
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center text-gray-900">Galería</h2>
+        <div class="mt-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <img src="https://tse1.mm.bing.net/th/id/OIP.k5h6Xn6z-QXOJwOt4jgnPAHaEK?rs=1&pid=ImgDetMain&o=7&rm=3" class="rounded-lg shadow hover:scale-105 transition">
+        <img src="https://tse3.mm.bing.net/th/id/OIP.6R9Nmge3KoKMVYJb14w3gAHaHJ?rs=1&pid=ImgDetMain&o=7&rm=3" class="rounded-lg shadow hover:scale-105 transition">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.znp5zTtS1J2MWK5FekFCZwHaFa?rs=1&pid=ImgDetMain&o=7&rm=3" class="rounded-lg shadow hover:scale-105 transition">
+        <img src="https://tse3.mm.bing.net/th/id/OIP.VZlFxftLSVidUQLljAK0LAHaGO?w=4777&h=4016&rs=1&pid=ImgDetMain&o=7&rm=3" class="rounded-lg shadow hover:scale-105 transition">
+        </div>
+    </div>
+    </section>
+
+    <section class="py-20 bg-gray-50">
+    <div class="max-w-3xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center text-gray-900">Preguntas Frecuentes</h2>
+        <div class="mt-8 space-y-4">
+        <div class="border rounded-lg">
+            <button class="w-full text-left p-4 font-semibold flex justify-between items-center" onclick="this.nextElementSibling.classList.toggle('hidden')">
+            ¿Cómo postulo a la UNDC?
+            <span>+</span>
+            </button>
+            <div class="p-4 hidden">
+            Puedes postular ingresando a la sección “Admisión” en la web oficial y siguiendo el cronograma.
+            </div>
+        </div>
+        <div class="border rounded-lg">
+            <button class="w-full text-left p-4 font-semibold flex justify-between items-center" onclick="this.nextElementSibling.classList.toggle('hidden')">
+            ¿Qué carreras ofrece la universidad?
+            <span>+</span>
+            </button>
+            <div class="p-4 hidden">
+            Ingeniería de Sistemas, Administración, Hotelería y Turismo, Contabilidad, Agronomía y más.
+            </div>
+        </div>
+        </div>
+    </div>
+    </section>
+
+  <!-- CARRERAS PROFESIONALES -->
+  <section id="carreras" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center text-gray-900">Carreras Profesionales</h2>
+      <div class="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+
+        <!-- Ingeniería de Sistemas (Celeste) -->
+        <div class="bg-sky-100 p-6 rounded-xl shadow-lg hover:shadow-2xl hover:drop-shadow-[0_0_8px_#38bdf8] transition">
+          <h3 class="text-xl font-semibold text-sky-600">Ingeniería de Sistemas</h3>
+          <p class="mt-2 text-gray-700">Formamos profesionales capaces de diseñar, desarrollar y gestionar soluciones tecnológicas innovadoras.</p>
+        </div>
+
+        <!-- Contabilidad (Azul) -->
+        <div class="bg-blue-100 p-6 rounded-xl shadow-lg hover:shadow-2xl hover:drop-shadow-[0_0_8px_#3b82f6] transition">
+          <h3 class="text-xl font-semibold text-blue-600">Contabilidad</h3>
+          <p class="mt-2 text-gray-700">Brindamos sólidos conocimientos en gestión financiera, auditoría y control de recursos.</p>
+        </div>
+
+        <!-- Agronomía (Verde) -->
+        <div class="bg-green-100 p-6 rounded-xl shadow-lg hover:shadow-2xl hover:drop-shadow-[0_0_8px_#22c55e] transition">
+          <h3 class="text-xl font-semibold text-green-600">Agronomía</h3>
+          <p class="mt-2 text-gray-700">Contribuimos al desarrollo agrícola sostenible mediante investigación e innovación.</p>
+        </div>
+
+        <!-- Hotelería y Turismo (Rojo) -->
+        <div class="bg-red-100 p-6 rounded-xl shadow-lg hover:shadow-2xl hover:drop-shadow-[0_0_8px_#ef4444] transition">
+          <h3 class="text-xl font-semibold text-red-600">Hotelería y Turismo</h3>
+          <p class="mt-2 text-gray-700">Preparamos profesionales en la gestión de servicios turísticos y hoteleros, impulsando el desarrollo sostenible del sector.</p>
+        </div>
+
+        <!-- Administración (Naranja) -->
+        <div class="bg-orange-100 p-6 rounded-xl shadow-lg hover:shadow-2xl hover:drop-shadow-[0_0_8px_#f97316] transition">
+          <h3 class="text-xl font-semibold text-orange-600">Administración</h3>
+          <p class="mt-2 text-gray-700">Desarrollamos líderes con visión estratégica, capaces de dirigir organizaciones en un entorno competitivo y global.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- DOCENTES -->
+  <section id="docentes" class="bg-gray-50 py-20">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold text-gray-900">Nuestros Docentes</h2>
+      <p class="mt-4 text-lg text-gray-700">Un equipo académico altamente calificado y comprometido con la formación de profesionales de excelencia.</p>
+      <ul class="mt-12 grid gap-12 sm:grid-cols-2 lg:grid-cols-3">
+        <li>
+          <img class="mx-auto h-40 w-40 rounded-full object-cover" src="../assets/img/docente1.jpeg" alt="">
+          <h3 class="mt-4 font-semibold text-green-800">Ing. Claudio</h3>
+          <p class="text-sm text-gray-600">Docente de Ingeniería de Sistemas</p>
+        </li>
+        <li>
+          <img class="mx-auto h-40 w-40 rounded-full object-cover" src="https://randomuser.me/api/portraits/men/32.jpg" alt="">
+          <h3 class="mt-4 font-semibold text-green-800">Ing. Carlos Ramírez</h3>
+          <p class="text-sm text-gray-600">Docente de Ingeniería de Sistemas</p>
+        </li>
+        <li>
+          <img class="mx-auto h-40 w-40 rounded-full object-cover" src="https://randomuser.me/api/portraits/men/76.jpg" alt="">
+          <h3 class="mt-4 font-semibold text-green-800">MSc. Luis Fernández</h3>
+          <p class="text-sm text-gray-600">Docente de Agronomía</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- NOTICIAS -->
+  <section id="noticias" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center text-gray-900">Noticias y Eventos</h2>
+      <div class="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <article class="bg-gray-100 rounded-xl shadow-lg p-6 hover:shadow-2xl">
+          <h3 class="text-xl font-semibold text-gray-900">Concurso de Innovación 2025</h3>
+          <p class="mt-2 text-gray-700">La UNDC organiza un concurso para promover proyectos tecnológicos y científicos en la región.</p>
+        </article>
+        <article class="bg-gray-100 rounded-xl shadow-lg p-6 hover:shadow-2xl">
+          <h3 class="text-xl font-semibold text-gray-900">Semana Universitaria</h3>
+          <p class="mt-2 text-gray-700">Actividades culturales, deportivas y académicas para fortalecer la vida estudiantil.</p>
+        </article>
+        <article class="bg-gray-100 rounded-xl shadow-lg p-6 hover:shadow-2xl">
+          <h3 class="text-xl font-semibold text-gray-900">Convenios Internacionales</h3>
+          <p class="mt-2 text-gray-700">La universidad fortalece vínculos con instituciones extranjeras para programas de intercambio.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+    <footer id="contacto" class="bg-gray-900 text-white py-12">
+    <div class="max-w-7xl mx-auto px-6 grid gap-12 lg:grid-cols-3">
+        
+        <!-- Información -->
+        <div>
+        <h4 class="font-semibold text-red-400">Universidad Nacional de Cañete</h4>
+        <p class="text-sm mt-2">Av. Mariscal Benavides N°1370 San Vicente de Cañete.</p>
+        </div>
+
+        <!-- Contacto -->
+        <div>
+        <h4 class="font-semibold text-red-400">Contacto</h4>
+        <p class="text-sm mt-2">📧 informes@undc.edu.pe</p>
+        <p class="text-sm">📞 (01) 581-2151</p>
+        </div>
+
+        <!-- Formulario -->
+        <div>
+        <h4 class="font-semibold text-red-400">Contáctanos</h4>
+        <form id="contactForm" class="mt-4 space-y-3">
+            <input type="text" placeholder="Tu nombre" class="w-full px-4 py-2 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-yellow-400">
+            <input type="email" placeholder="Tu correo" class="w-full px-4 py-2 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-yellow-400">
+            <textarea placeholder="Escribe tu mensaje..." rows="3" class="w-full px-4 py-2 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-yellow-400"></textarea>
+            <button type="submit" class="w-full bg-red-400 text-green-900 font-semibold py-2 rounded-lg hover:bg-yellow-300 transition">
+            Enviar
+            </button>
+        </form>
+        </div>
+    </div>
+
+    <!-- Derechos -->
+    <div class="text-center text-sm mt-8 border-t border-red-700 pt-4">
+        © 2025 Universidad Nacional de Cañete - Todos los derechos reservados
+    </div>
+    </footer>
+
+    <!-- SCRIPT -->
+    <script>
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+        e.preventDefault(); // evita recargar la página
+        alert("✅ ¡Gracias por tu mensaje! Nos pondremos en contacto pronto.");
+        this.reset(); // limpia el formulario
+    });
+    </script>
+
+
+  <!-- SCRIPT MENU -->
+  <script>
+    document.getElementById("openMenu").addEventListener("click", () => {
+      document.getElementById("mobileMenu").classList.toggle("hidden");
+    });
+  </script>
+
+</body>
+</html>
